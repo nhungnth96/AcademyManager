@@ -2,6 +2,8 @@ package model;
 
 import config.InputMethods;
 
+import java.util.Date;
+
 public class Teacher extends User {
     private Classs classs;
     private boolean status;
@@ -9,7 +11,7 @@ public class Teacher extends User {
     public Teacher() {
     }
 
-    public Teacher(int userId, String username, String password, String fullname, String birthday, String tel, Classs classs, boolean status) {
+    public Teacher(int userId, String username, String password, String fullname, Date birthday, String tel, Classs classs, boolean status) {
         super(userId, username, password, fullname, birthday, tel);
         this.classs = classs;
         this.status = status;

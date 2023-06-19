@@ -13,7 +13,7 @@ public class Student extends User {
     public Student() {
     }
 
-    public Student(int userId, String username, String password, String fullname, String birthday, String tel, Subject subject, Classs classs, boolean status) {
+    public Student(int userId, String username, String password, String fullname, Date birthday, String tel, Subject subject, Classs classs, boolean status) {
         super(userId, username, password, fullname, birthday, tel);
         this.subject = subject;
         this.classs = classs;

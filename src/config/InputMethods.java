@@ -136,12 +136,18 @@ public final class InputMethods {
         getInput();
     }
     /*========================================Other Method========================================*/
-    public static String getBirthday(){
+    public static Date getBirthday(){
         while (true) {
             try {
-                Date birthdayDate = DATE_FORMAT.parse(getString());
-                return DATE_FORMAT.format(birthdayDate);
-            } catch (ParseException errException) {
+                String input = getString();
+                Date birthday = DATE_FORMAT.parse(input);
+                String formattedDate = DATE_FORMAT.format(birthday);
+                if (input.equals(formattedDate)) {
+                    return birthday;
+                } else {
+                    System.err.println(DATE_ALERT);
+                }
+            } catch (ParseException e) {
                 System.err.println(DATE_ALERT);
             }
         }

@@ -17,6 +17,7 @@ public class StudentService {
 //            new Student(4,"nhungJS4","nhungJS4","nhungJS4","27/04/1996","0967585702",subjectService.getSubjectList()[1],classsService.getClassList()[2],true ),
 //            new Student(5,"nhungJS5","nhungJS5","nhungJS5","27/04/1996","0967585702",subjectService.getSubjectList()[1],classsService.getClassList()[2],true ),
 //            new Student(6,"nhungJS6","nhungJS6","nhungJS6","27/04/1996","0967585702",subjectService.getSubjectList()[1],classsService.getClassList()[2],true ),
+//
 //    };
     private int size;
 

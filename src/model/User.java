@@ -9,13 +9,13 @@ public class User {
     private String username;
     private String password;
     private String fullname;
-    private String birthday;
+    private Date birthday;
     private String tel;
 
     public User() {
     }
 
-    public User(int userId, String username, String password, String fullname, String birthday, String tel) {
+    public User(int userId, String username, String password, String fullname, Date birthday, String tel) {
         this.userId = userId;
         this.username = username;
         this.password = password;
@@ -56,11 +56,11 @@ public class User {
         this.fullname = fullname;
     }
 
-    public String getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
@@ -92,7 +92,7 @@ public class User {
                 "Tên đăng nhập: " + username + "\n" +
                 "Mật khẩu: " + password + "\n" +
                 "Họ và tên: " + fullname + "\n" +
-                "Ngày sinh: " + birthday + "\n" +
+                "Ngày sinh: " + InputMethods.DATE_FORMAT.format(birthday) + "\n" +
                 "Điện thoại: " + tel
                 ;
     }
